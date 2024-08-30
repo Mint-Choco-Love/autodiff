@@ -72,8 +72,8 @@ p y
 # scalar-valued function y(x1, x2, x3) = x1 + cos(x1) * sin(x2) * log(x3)
 # tangent y = partial{y}/partial{x1}
 # x1 = 3, x2 = 5, x3 = 7일 때 x1에 대한 y의 derivative는...
-x1 = AutoFloat.new(3, 1)
-x2 = AutoFloat.new(5)
-x3 = AutoFloat.new(7)
+x1 = AutoFloat.new(3.0)
+x2 = AutoFloat.new(5.0)
+x3 = AutoFloat.new(7.0, 1.0)
 y = x1 + x1.cos * x2.sin * x3.log
 p y
